@@ -20,6 +20,7 @@ async function requestMicrophonePermission() {
     }
 }
 
+
 async function getSignedUrl(): Promise<string> {
     const response = await fetch('/api/signed-url')
     if (!response.ok) {
